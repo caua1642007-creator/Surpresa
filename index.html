@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Juliana ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+
+section{
+min-height:100vh;
+padding:40px 20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+h1,h2{
+margin-bottom:20px;
+}
+
+.estrelas{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(white 1px, transparent 1px);
+background-size:50px 50px;
+z-index:-2;
+}
+
+.heart{
+font-size:120px;
+color:#2ecc71;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.numero{
+font-size:80px;
+color:#2ecc71;
+font-weight:bold;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:20px;
+background:#2ecc71;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+.girassol{
+font-size:50px;
+animation:gira 4s linear infinite;
+}
+
+@keyframes gira{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+.galeria{
+display:flex;
+overflow:auto;
+gap:15px;
+padding:20px;
+width:100%;
+}
+
+.galeria img{
+width:250px;
+height:350px;
+object-fit:cover;
+border-radius:20px;
+}
+
+/* ÁREA DOS VÍDEOS */
+
+.videos{
+display:flex;
+overflow:auto;
+gap:20px;
+padding:20px;
+width:100%;
+scroll-snap-type:x mandatory;
+}
+
+.videos video{
+width:300px;
+height:500px;
+object-fit:cover;
+border-radius:20px;
+scroll-snap-align:center;
+background:#111;
+}
+
+/* FIM DA ÁREA DOS VÍDEOS */
+
+.motivo{
+background:#111;
+padding:15px;
+margin:10px;
+border-radius:15px;
+max-width:500px;
+}
+
+.contador{
+font-size:28px;
+color:#2ecc71;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="estrelas"></div>
+
+<audio id="musica" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<section>
+
+<div class="girassol">🌻</div>
+
+<div class="heart">❤️</div>
+
+<div class="numero">16</div>
+
+<h1>Juliana ❤️</h1>
+
+<p>
+Esta é uma pequena parte do que sinto por você...
+</p>
+
+<button onclick="iniciar()">
+Começar
+</button>
+
+</section>
+
+<section>
+
+<h2>🎆 Feliz Dia dos Namorados 🎆</h2>
+
+<p>
+Você é uma das melhores partes da minha vida.
+
+
+<p>
+
+Aqui estão alguns pedacinhos da nossa história que eu quero guardar para sempre. 
+Cada vídeo e foto representa um momento especial, uma lembrança que me faz sorrir
+         e perceber o quanto sou feliz por ter você ao meu lado.
+</p>
+
+<p>
+
+Porque a nossa história ainda está só começando. ❤️
+</p>
+
+</section>
+
+<section>
+
+<h2>📸 Antes</h2>
+
+<div class="galeria">
+
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.19 (5).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (1).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.37.43.jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.19 (4).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.19 (3).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56.jpeg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>💕 Nosso primeiro eu te amo</h2>
+
+<div class="galeria">
+
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (8).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.44.54 (1).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.44.54 (2).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.44.54 (3).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.44.54 (4).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.44.54 (5).jpeg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>✨ Nossos momentos únicos</h2>
+
+<div class="galeria">
+
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (2).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (3).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (7).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (6).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (5).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (4).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (10).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (12).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.05.56 (11).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (7).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (6).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (5).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.10.13.jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.19 (2).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (4).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (3).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (2).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18 (1).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.28.jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 20.00.18.jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 22.23.41 (3).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 22.23.41 (2).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 22.23.41 (1).jpeg">
+<img src="fotos/WhatsApp Image 2026-07-21 at 22.23.41.jpeg">
+
+
+</div>
+
+</section>
+
+<!-- SEÇÃO DE VÍDEOS -->
+
+<section>
+
+<h2>🎥 Nossos vídeos</h2>
+
+<p>
+Alguns momentos que quero guardar para sempre ❤️
+</p>
+
+<div class="videos">
+
+<video controls>
+<source src="fotos/WhatsApp Video 2026-07-21 at 20.10.13.mp4" type="video/mp4">
+Seu navegador não suporta vídeos.
+</video>
+
+<video controls>
+<source src="fotos/WhatsApp Video 2026-07-21 at 20.07.37.mp4" type="video/mp4">
+Seu navegador não suporta vídeos.
+</video>
+
+<video controls>
+<source src="fotos/WhatsApp Video 2026-07-21 at 22.23.41.mp4" type="video/mp4">
+Seu navegador não suporta vídeos.
+</video>
+
+<video controls>
+<source src="fotos/WhatsApp Video 2026-07-21 at 22.27.04.mp4" type="video/mp4">
+Seu navegador não suporta vídeos.
+</video>
+
+</div>
+
+</section>
+
+<!-- FIM DA SEÇÃO DE VÍDEOS -->
+
+<section>
+
+<h2>♾️ Infinitos motivos para te amar</h2>
+
+<div class="motivo">❤️ Seu sorriso</div>
+<div class="motivo">❤️ Seu carinho</div>
+<div class="motivo">❤️ Seu jeito</div>
+<div class="motivo">❤️ Sua companhia</div>
+<div class="motivo">❤️ Sua força</div>
+<div class="motivo">❤️ Porque você é você</div>
+
+</section>
+
+<section>
+
+<div class="heart">❤️</div>
+
+<h2>Juliana</h2>
+
+<p>
+Obrigado por cada sorriso, cada abraço e cada momento.
+<br><br>
+Você tornou meus dias mais felizes.
+<br><br>
+Feliz Dia dos Namorados.
+</p>
+
+<div id="dias" class="contador"></div>
+
+<h3>
+Com amor,<br>
+Cauã ❤️
+</h3>
+
+</section>
+
+<script>
+
+function iniciar(){
+document.getElementById("musica").play();
+}
+
+const inicio = new Date("2025-05-01");
+const hoje = new Date();
+
+const diferenca =
+Math.floor(
+(hoje - inicio)/(1000*60*60*24)
+);
+
+document.getElementById("dias").innerHTML =
+"Já se passaram " +
+diferenca +
+" dias desde que você mudou minha vida ❤️";
+
+function criarCoracao(){
+
+const coracao =
+document.createElement("div");
+
+coracao.innerHTML="❤️";
+
+coracao.style.position="fixed";
+coracao.style.left=Math.random()*100+"vw";
+coracao.style.top="100vh";
+coracao.style.fontSize="30px";
+
+document.body.appendChild(coracao);
+
+let pos=100;
+
+const anim=setInterval(()=>{
+
+pos--;
+
+coracao.style.top=pos+"vh";
+
+if(pos<0){
+clearInterval(anim);
+coracao.remove();
+}
+
+},20);
+
+}
+
+setInterval(criarCoracao,700);
+
+</script>
+
+</body>
+</html>
